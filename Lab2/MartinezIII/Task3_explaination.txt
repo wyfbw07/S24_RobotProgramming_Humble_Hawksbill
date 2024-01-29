@@ -1,0 +1,4 @@
+My approach to task 3 was fairly simple. I first used cleared the turtle
+canvas calling the /clear service. I then changed the pen color to black
+using the method used to solved the services challenge. Then I used the
+teleop terminal to draw the square with the turtle.
