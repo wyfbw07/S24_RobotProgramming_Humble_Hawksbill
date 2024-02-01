@@ -1,0 +1,7 @@
+Once opening a new turtlesim window, the first step in drawing the square was to make the
+line black. This was done using the same 'service call' command as was used for the
+challenge in the service part of the lab. This time, the r, g, and b values were all set to 0
+to make the line black. The up arrow key was used to move the turtle forward in a straight
+line, and the turtle was rotated using the 'action send_goal' command from the actions part
+of the lab. This command was used to ensure the turtle was rotated pi/2 radians. These
+forward movement and rotation steps were repeated until the square was closed.
