@@ -1,0 +1,9 @@
+[0.966s] Invoking command in '/home/yahboom/Desktop/roscourse_final_ws/src/pubsub': PYTHONPATH=/home/yahboom/Desktop/roscourse_final_ws/build/PubSub/prefix_override:/home/yahboom/Desktop/roscourse_final_ws/install/PubSub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/PubSub build --build-base /home/yahboom/Desktop/roscourse_final_ws/build/PubSub/build install --record /home/yahboom/Desktop/roscourse_final_ws/build/PubSub/install.log --install-scripts $base/lib/PubSub --single-version-externally-managed
+[1.295s] running egg_info
+[1.295s] writing ../../build/PubSub/PubSub.egg-info/PKG-INFO
+[1.296s] writing dependency_links to ../../build/PubSub/PubSub.egg-info/dependency_links.txt
+[1.296s] writing entry points to ../../build/PubSub/PubSub.egg-info/entry_points.txt
+[1.297s] writing requirements to ../../build/PubSub/PubSub.egg-info/requires.txt
+[1.297s] writing top-level names to ../../build/PubSub/PubSub.egg-info/top_level.txt
+[1.345s] error: package directory 'PubSub' does not exist
+[1.367s] Invoked command in '/home/yahboom/Desktop/roscourse_final_ws/src/pubsub' returned '1': PYTHONPATH=/home/yahboom/Desktop/roscourse_final_ws/build/PubSub/prefix_override:/home/yahboom/Desktop/roscourse_final_ws/install/PubSub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/PubSub build --build-base /home/yahboom/Desktop/roscourse_final_ws/build/PubSub/build install --record /home/yahboom/Desktop/roscourse_final_ws/build/PubSub/install.log --install-scripts $base/lib/PubSub --single-version-externally-managed

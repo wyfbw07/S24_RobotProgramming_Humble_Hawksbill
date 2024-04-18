@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from project/action/RobotToGoal.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module project {
+  module action {
+    struct RobotToGoal_Goal {
+      sequence<geometry_msgs::msg::Pose> goal_poses;
+    };
+    struct RobotToGoal_Result {
+      int32 ret;
+    };
+    struct RobotToGoal_Feedback {
+      geometry_msgs::msg::Pose mid_goal_pose;
+    };
+  };
+};
