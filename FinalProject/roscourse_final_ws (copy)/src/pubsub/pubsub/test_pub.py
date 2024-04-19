@@ -1,9 +1,10 @@
-#! /usr/bin/env python
-import rospy
+#!/usr/bin/env python3
+import rclpy
 from nav_msgs.msg import Odometry
-from tf.transformations import euler_from_quaternion
 from geometry_msgs.msg import Point, Twist
-from math import atan2
+from tf2_ros import TransformListener, Buffer
+from tf2_geometry_msgs import do_transform_point
+from math import atan2, sqrt
 import numpy as np
 
 x = 0.0
@@ -19,45 +20,60 @@ def newOdom(msg):
     y = msg.pose.pose.position.y
 
     rot_q = msg.pose.pose.orientation
-    (roll, pitch, theta) = euler_from_quaternion ([rot_q.x, rot_q.y, rot_q.z, rot_q.w])
+    (roll, pitch, theta) = euler_from_quaternion([rot_q.x, rot_q.y, rot_q.z, rot_q.w])
 
-rospy.init_node ("speed_controller")
+def transform_point(tf_buffer, point):
+    try:
+        trans = tf_buffer.lookup_transform("odom", "base_link", rclpy.time.Time().to_msg())
+        transformed_point = do_transform_point(point, trans)
+        return transformed_point.point.x, transformed_point.point.y
+    except Exception as e:
+        print("Error in transforming point:", e)
+        return None, None
 
-sub = rospy.Subscriber("/odometry/filtered", Odometry, newOdom)
-pub = rospy.Publisher("/cmd_vel",Twist, queue_size=1)
+rclpy.init()
+node = rclpy.create_node("speed_controller")
+
+subscriber = node.create_subscription(Odometry, "/odometry/filtered", newOdom, 10)
+tf_buffer = Buffer()
+tf_listener = TransformListener(tf_buffer, node)
+
+publisher = node.create_publisher(Twist, "/cmd_vel", 10)
 speed = Twist()
 
-r = rospy.Rate(4)
+rate = node.create_rate(4)
 
-path_list = [(4,4), (3,1), (0,1), (-8,-8)]
-point_index = 0  # instead of deleting stuff from a list (which is anyway bug prone) we'll just iterate through it using index variable.
-goal = Point ()
+path_list = [(4, 4), (3, 1), (0, 1), (-8, -8)]
+point_index = 0
+goal = Point()
 
-while not rospy.is_shutdown():
+while rclpy.ok():
+    if point_index < len(path_list):
+        goal.x, goal.y = path_list[point_index]
+    else:
+        break
 
-     if point_index < len(path_list): # so we won't get an error of trying to reach non-existant index of a list
-         goal.x = path_list[point_index][0] # x coordinate for goal
-         goal.y = path_list[point_index][1] # y coordinate for goal
-     else:
-         break # I guess we're done?
-     inc_x = goal.x - x
-     inc_y = goal.y - y
+    goal_x_transformed, goal_y_transformed = transform_point(tf_buffer, goal)
 
-     angle_to_goal = atan2 (inc_y, inc_x) # this is our "bearing to goal" as I can guess
+    if goal_x_transformed is not None and goal_y_transformed is not None:
+        inc_x = goal_x_transformed - x
+        inc_y = goal_y_transformed - y
 
-     # distance_to_goal = np.sqrt(goal.x*goal.x + goal.y*goal.y) 
-     distance_to_goal = np.sqrt(inc_x*inc_x + inc_y*inc_y)
+        angle_to_goal = atan2(inc_y, inc_x)
+        distance_to_goal = sqrt(inc_x * inc_x + inc_y * inc_y)
 
-     if distance_to_goal >= 0.3: # we'll now head to our target
-         if abs(angle_to_goal - theta) > 0.2:
-             speed.linear.x = 0.0
-             speed.angular.z = 0.9
+        if distance_to_goal >= 0.3:
+            if abs(angle_to_goal - theta) > 0.2:
+                speed.linear.x = 0.0
+                speed.angular.z = 0.9
+            else:
+                speed.linear.x = 0.8
+                speed.angular.z = 0.0
+            publisher.publish(speed)
+        else:
+            point_index += 1
 
-         else:
-             speed.linear.x = 0.8
-             speed.angular.z = 0.0
-         pub.publish(speed)
+    rate.sleep()
 
-     else:
-        point_index += 1
-     r.sleep()
+rclpy.shutdown()
+
