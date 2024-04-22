@@ -16,9 +16,12 @@ class MinimalSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('Linear Received: "L_x: %f, L_y: %f, L_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
-        self.get_logger().info('Angular Received: "A_x: %f, A_y: %f, A_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
-
+        f = open("data.txt", "w")
+        f.write('Linear Received: "L_x: %f, L_y: %f, L_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
+        f.write('Angular Received: "A_x: %f, A_y: %f, A_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
+        #self.get_logger().info('Linear Received: "L_x: %f, L_y: %f, L_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
+        #self.get_logger().info('Angular Received: "A_x: %f, A_y: %f, A_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
+        f.close()
 
 def main(args=None):
     rclpy.init(args=args)
