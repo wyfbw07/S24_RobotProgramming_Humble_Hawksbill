@@ -10,7 +10,7 @@ class SquareMovement(Node):
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         timer_period = 1.0  # seconds
         self.timer = self.create_timer(timer_period, self.move_robot)
-        self.linear_speed = 0.15  # m/s
+        self.linear_speed = 0.1 + 2.0*math.pi  # m/s
         self.angular_speed = 0.2  # rad/s
         self.side_length = 0.5  # meters
         self.current_angle = 0.0  # radians
