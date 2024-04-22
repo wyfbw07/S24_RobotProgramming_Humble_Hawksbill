@@ -14,14 +14,13 @@ class MinimalSubscriber(Node):
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.file = open("data.txt", "w")
 
     def listener_callback(self, msg):
-        f = open("data.txt", "w")
-        f.write('Linear Received: "L_x: %f, L_y: %f, L_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
-        f.write('Angular Received: "A_x: %f, A_y: %f, A_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
+        self.file.write('Linear Received: "L_x: %f, L_y: %f, L_z: %f"\n' % (msg.linear.x, msg.linear.y, msg.linear.z))
+        self.file.write('Angular Received: "A_x: %f, A_y: %f, A_z: %f"\n' % (msg.angular.x, msg.angular.y, msg.angular.z))
         #self.get_logger().info('Linear Received: "L_x: %f, L_y: %f, L_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
         #self.get_logger().info('Angular Received: "A_x: %f, A_y: %f, A_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
-        f.close()
 
 def main(args=None):
     rclpy.init(args=args)
@@ -31,6 +30,7 @@ def main(args=None):
     rclpy.spin(minimal_subscriber)
 
     minimal_subscriber.destroy_node()
+    minimal_subscriber.file.close()
     rclpy.shutdown()
 
 
