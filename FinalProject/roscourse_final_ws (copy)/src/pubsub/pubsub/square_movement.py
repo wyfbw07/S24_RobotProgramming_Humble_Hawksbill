@@ -46,7 +46,7 @@ class SquareMovement(Node):
             else:
                 self.current_angle += self.angular_speed
         else:
-            if abs(self.current_angle) >= 1.0:  # Ensure it rotates 90 degrees
+            if abs(self.current_angle) >= 0.0:  # Ensure it rotates 90 degrees
                 self.current_side += 1
                 self.current_angle = 0.0
             else:
