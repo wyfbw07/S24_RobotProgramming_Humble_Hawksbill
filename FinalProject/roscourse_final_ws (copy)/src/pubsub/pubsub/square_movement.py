@@ -11,11 +11,11 @@ class SquareMovement(Node):
         self.timer_ = self.create_timer(1.0, self.move_robot)
         self.current_step = 0
         self.velocities = [
-            (1, 0, 0, 0),  # Forward
-            (0, 0, 0, 1),  # Rotate
-            (1, 0, 0, 0),  # Forward
-            (0, 0, 0, 1),  # Rotate
-            (1, 0, 0, 0)   # Forward
+            (1.0, 0.0, 0.0, 0.0),  # Forward
+            (0.0, 0.0, 0.0, 1.0),  # Rotate
+            (1.0, 0.0, 0.0, 0.0),  # Forward
+            (0.0, 0.0, 0.0, 1.0),  # Rotate
+            (1.0, 0.0, 0.0, 0.0)   # Forward
         ]
 
     def move_robot(self):
