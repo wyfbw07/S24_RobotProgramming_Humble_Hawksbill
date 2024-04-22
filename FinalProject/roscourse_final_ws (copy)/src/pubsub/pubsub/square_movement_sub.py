@@ -16,8 +16,8 @@ class MinimalSubscriber(Node):
         self.subscription  # prevent unused variable warning
 
     def listener_callback(self, msg):
-        self.get_logger().info('Received: "v_x: %f, v_y: %f, v_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
-        self.get_logger().info('Received: "v_x: %f, v_y: %f, v_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
+        self.get_logger().info('Linear Received: "L_x: %f, L_y: %f, L_z: %f"' % (msg.linear.x, msg.linear.y, msg.linear.z))
+        self.get_logger().info('Angular Received: "A_x: %f, A_y: %f, A_z: %f"' % (msg.angular.x, msg.angular.y, msg.angular.z))
 
 
 def main(args=None):
