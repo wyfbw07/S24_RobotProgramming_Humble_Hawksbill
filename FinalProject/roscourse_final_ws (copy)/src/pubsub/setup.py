@@ -11,7 +11,11 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+    'setuptools',
+    'rclpy',
+    'geometry_msgs',
+    ],
     zip_safe=True,
     maintainer='yahboom',
     maintainer_email='calcaa@rpi.edu',
@@ -23,7 +27,7 @@ setup(
         'final_pub = pubsub.final_pub:main',
         'final_sub = pubsub.final_sub:main',
         'test_pub = pubsub.test_pub:main',
-        'move_square = pubsub.move_square:main',
+        'square_movement = pubsub.square_movement:main',
         ],
     },
 )
