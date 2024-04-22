@@ -8,10 +8,10 @@ class SquareMovement(Node):
     def __init__(self):
         super().__init__('square_movement')
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
-        timer_period = 1.0  # seconds
+        timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.move_robot)
         self.linear_speed = 0.2  # m/s
-        self.angular_speed = 0.2  # rad/s
+        self.angular_speed = 1  # rad/s
         self.side_length = 0.5  # meters
         self.current_angle = 0.0  # radians
         self.current_side = 0
