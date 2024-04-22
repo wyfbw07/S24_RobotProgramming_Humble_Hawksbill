@@ -1,40 +1,65 @@
-#!/usr/bin/env python3
-
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+import math
+import time
 
 class SquareMovement(Node):
     def __init__(self):
         super().__init__('square_movement')
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.timer_ = self.create_timer(1.0, self.move_robot)
-        self.current_step = 0
-        self.velocities = [
-            (1.0, 0.0, 0.0, 0.0, 0.0, 0.0),  # Forward
-            (0.0, 0.0, 0.0, 0,0, 0.0, 1.0),  # Rotate
-            (1.0, 0.0, 0.0, 0.0, 0.0, 0.0),  # Forward
-            (0.0, 0.0, 0.0, 0,0, 0.0, 1.0),  # Rotate
-            (1.0, 0.0, 0.0, 0.0, 0.0, 0.0),  # Forward
-        ]
+        timer_period = 1  # seconds
+        self.timer = self.create_timer(timer_period, self.move_robot)
+        self.linear_speed = 0.2  # m/s
+        self.angular_speed = (math.pi)/16  # rad/s
+        self.side_length = 1.0  # meters
+        self.current_angle = 0.0  # radians
+        self.current_side = 0
 
     def move_robot(self):
         twist = Twist()
-        twist.linear.x = self.velocities[self.current_step][0]
-        twist.linear.y = self.velocities[self.current_step][1]
-        twist.linear.z = self.velocities[self.current_step][2]
-        twist.angular.x = self.velocities[self.current_step][3]
-        twist.angular.y = self.velocities[self.current_step][4]
-        twist.angular.z = self.velocities[self.current_step][5]
-        self.publisher_.publish(twist)
+
+        # Move forward
+        if self.current_side % 4 == 0:
+            twist.linear.x = self.linear_speed
+            twist.angular.z = 0.0
+        # Rotate 90 degrees
+        elif self.current_side % 4 == 1:
+            twist.linear.x = 0.0
+            twist.angular.z = self.angular_speed
+        # Move forward
+        elif self.current_side % 4 == 2:
+            twist.linear.x = self.linear_speed
+            twist.angular.z = 0.0
+        # Rotate 90 degrees
+        elif self.current_side % 4 == 3:
+            twist.linear.x = 0.0
+            twist.angular.z = self.angular_speed
         
-        self.current_step = (self.current_step + 1) % len(self.velocities)
+        self.publisher_.publish(twist)
+
+        # Update current angle and side
+        if self.current_side % 2 == 0:
+            if abs(self.current_angle) >= math.pi / 2:
+                self.current_side += 1
+                self.current_angle = 0.0
+            else:
+                self.current_angle += self.angular_speed
+        else:
+            if abs(self.current_angle) >= math.pi:
+                self.current_side += 1
+                self.current_angle = 0.0
+            else:
+                self.current_angle += self.angular_speed
 
 def main(args=None):
     rclpy.init(args=args)
-    node = SquareMovement()
-    rclpy.spin(node)
-    node.destroy_node()
+
+    square_movement = SquareMovement()
+
+    rclpy.spin(square_movement)
+
+    square_movement.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__main__':
