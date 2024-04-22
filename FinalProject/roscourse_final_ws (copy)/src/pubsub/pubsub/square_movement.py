@@ -11,10 +11,11 @@ class SquareMovement(Node):
         timer_period = 1.0  # seconds
         self.timer = self.create_timer(timer_period, self.move_robot)
         self.linear_speed = 0.2  # m/s
-        self.angular_speed = 0.103 # rad/s
-        self.side_length = 0.5  # meters
+        self.angular_speed = 0.2  # rad/s
+        self.side_length = 1.0  # meters
         self.current_angle = 0.0  # radians
         self.current_side = 0
+        self.target_angle = math.pi / 2  # 90 degrees in radians
 
     def move_robot(self):
         twist = Twist()
@@ -27,6 +28,10 @@ class SquareMovement(Node):
         elif self.current_side % 4 == 1:
             twist.linear.x = 0.0
             twist.angular.z = self.angular_speed
+            self.current_angle += self.angular_speed
+            if self.current_angle >= self.target_angle:
+                self.current_side += 1
+                self.current_angle = 0.0
         # Move forward
         elif self.current_side % 4 == 2:
             twist.linear.x = self.linear_speed
@@ -35,22 +40,12 @@ class SquareMovement(Node):
         elif self.current_side % 4 == 3:
             twist.linear.x = 0.0
             twist.angular.z = self.angular_speed
-        
-        self.publisher_.publish(twist)
+            self.current_angle += self.angular_speed
+            if self.current_angle >= self.target_angle:
+                self.current_side += 1
+                self.current_angle = 0.0
 
-        # Update current angle and side
-        if self.current_side % 4 == 1 or self.current_side % 4 == 3:
-            if abs(self.current_angle) >= math.pi / 2:
-                self.current_side += 1
-                self.current_angle = 0.0
-            else:
-                self.current_angle += self.angular_speed
-        else:
-            if abs(self.current_angle) >= 0.0:  # Ensure it rotates 90 degrees
-                self.current_side += 1
-                self.current_angle = 0.0
-            else:
-                self.current_angle += self.angular_speed
+        self.publisher_.publish(twist)
 
 def main(args=None):
     rclpy.init(args=args)
