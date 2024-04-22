@@ -11,11 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=[
-    'setuptools',
-    'rclpy',
-    'geometry_msgs',
-    ],
+    install_requires=['setuptools'],
     zip_safe=True,
     maintainer='yahboom',
     maintainer_email='calcaa@rpi.edu',
