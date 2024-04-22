@@ -24,6 +24,7 @@ setup(
         'final_sub = pubsub.final_sub:main',
         'test_pub = pubsub.test_pub:main',
         'square_movement = pubsub.square_movement:main',
+        'square_movement_sub = pubsub.square_movement_sub:main',
         ],
     },
 )
