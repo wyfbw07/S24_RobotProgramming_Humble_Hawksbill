@@ -8,10 +8,10 @@ class SquareMovement(Node):
     def __init__(self):
         super().__init__('square_movement')
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
-        timer_period = 1  # seconds
+        timer_period = 1.0  # seconds
         self.timer = self.create_timer(timer_period, self.move_robot)
         self.linear_speed = 0.2  # m/s
-        self.angular_speed = (math.pi)/16  # rad/s
+        self.angular_speed = math.pi / 16  # rad/s
         self.side_length = 1.0  # meters
         self.current_angle = 0.0  # radians
         self.current_side = 0
@@ -39,14 +39,14 @@ class SquareMovement(Node):
         self.publisher_.publish(twist)
 
         # Update current angle and side
-        if self.current_side % 2 == 0:
+        if self.current_side % 4 == 1 or self.current_side % 4 == 3:
             if abs(self.current_angle) >= math.pi / 2:
                 self.current_side += 1
                 self.current_angle = 0.0
             else:
                 self.current_angle += self.angular_speed
         else:
-            if abs(self.current_angle) >= math.pi:
+            if abs(self.current_angle) >= 1.0:  # Ensure it rotates 90 degrees
                 self.current_side += 1
                 self.current_angle = 0.0
             else:
