@@ -11,7 +11,7 @@ class SquareMovement(Node):
         timer_period = 1  # seconds
         self.timer = self.create_timer(timer_period, self.move_robot)
         self.linear_speed = 0.2  # m/s
-        self.angular_speed = (math.pi)/2  # rad/s
+        self.angular_speed = (math.pi)/8  # rad/s
         self.side_length = 1.0  # meters
         self.current_angle = 0.0  # radians
         self.current_side = 0
