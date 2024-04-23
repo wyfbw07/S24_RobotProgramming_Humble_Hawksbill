@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(project)
+project(custom_interface)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -35,7 +35,7 @@ endif()
 find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME} 
-"action/RobotToGoal.action"
+"srv/SetVelocity.srv"
 DEPENDENCIES geometry_msgs )
 
 ament_package()

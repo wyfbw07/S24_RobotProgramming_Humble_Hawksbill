@@ -1,0 +1,171 @@
+[0.068s] Invoking command in '/home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --build /home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project -- -j4 -l4
+[0.082s] CMake Error: The current CMakeCache.txt directory /home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project/CMakeCache.txt is different than the directory /home/yahboom/Desktop/roscourse_final_ws/build/project where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+[0.120s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.171s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.171s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.467s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.573s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.615s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.622s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.819s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.932s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[1.003s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.216s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[1.650s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.835s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.885s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.885s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.921s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.921s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.921s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.028s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.028s] -- Added test 'lint_cmake' to check CMake code style
+[2.028s] -- Added test 'xmllint' to check XML markup files
+[2.036s] -- Configuring done
+[2.120s] -- Generating done
+[2.130s] -- Build files have been written to: /home/yahboom/Desktop/roscourse_final_ws/build/project
+[2.205s] [  3%] Built target project__cpp
+[2.227s] [ 12%] Built target project__rosidl_generator_c
+[2.265s] [ 22%] Built target project__rosidl_typesupport_fastrtps_cpp
+[2.277s] [ 32%] Built target project__rosidl_typesupport_introspection_cpp
+[2.295s] [ 41%] Built target project__rosidl_typesupport_cpp
+[2.308s] [ 51%] Built target project__rosidl_typesupport_c
+[2.325s] [ 61%] Built target project__rosidl_typesupport_introspection_c
+[2.338s] [ 70%] Built target project__rosidl_typesupport_fastrtps_c
+[2.380s] [ 70%] Built target project
+[2.417s] [ 74%] Built target project__py
+[2.460s] [ 80%] Built target project__python
+[2.533s] [ 87%] Built target project__rosidl_typesupport_introspection_c__pyext
+[2.534s] [ 93%] Built target project__rosidl_typesupport_c__pyext
+[2.541s] [100%] Built target project__rosidl_typesupport_fastrtps_c__pyext
+[2.580s] Invoked command in '/home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --build /home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project -- -j4 -l4
+[2.693s] Invoking command in '/home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --install /home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project
+[2.714s] -- Install configuration: ""
+[2.715s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/ament_index/resource_index/rosidl_interfaces/project
+[2.715s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project
+[2.716s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg
+[2.716s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg/rosidl_generator_c__visibility_control.h
+[2.717s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action
+[2.717s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail
+[2.719s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__functions.c
+[2.719s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__functions.h
+[2.720s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__struct.h
+[2.726s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__type_support.h
+[2.726s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/robot_to_goal.h
+[2.726s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv
+[2.726s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/set_velocity.h
+[2.726s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail
+[2.727s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__struct.h
+[2.727s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__functions.h
+[2.727s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__type_support.h
+[2.727s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__functions.c
+[2.727s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/library_path.sh
+[2.727s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/library_path.dsv
+[2.743s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_generator_c.so
+[2.743s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project
+[2.744s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg
+[2.744s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.744s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action
+[2.744s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail
+[2.744s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__rosidl_typesupport_fastrtps_c.h
+[2.745s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv
+[2.745s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail
+[2.745s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__rosidl_typesupport_fastrtps_c.h
+[2.745s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_typesupport_fastrtps_c.so
+[2.745s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project
+[2.745s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__rosidl_typesupport_fastrtps_cpp.hpp
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/dds_fastrtps
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv
+[2.746s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/dds_fastrtps
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_typesupport_fastrtps_cpp.so
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action
+[2.747s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail
+[2.748s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__type_support.c
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__rosidl_typesupport_introspection_c.h
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__rosidl_typesupport_introspection_c.h
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__type_support.c
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_typesupport_introspection_c.so
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_typesupport_c.so
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action
+[2.749s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail
+[2.750s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__traits.hpp
+[2.750s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__struct.hpp
+[2.750s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__builder.hpp
+[2.750s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/robot_to_goal.hpp
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/set_velocity.hpp
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__struct.hpp
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__builder.hpp
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__traits.hpp
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action
+[2.751s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__rosidl_typesupport_introspection_cpp.hpp
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/action/detail/robot_to_goal__type_support.cpp
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__rosidl_typesupport_introspection_cpp.hpp
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/include/project/srv/detail/set_velocity__type_support.cpp
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_typesupport_introspection_cpp.so
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__rosidl_typesupport_cpp.so
+[2.752s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/pythonpath.sh
+[2.752s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/pythonpath.dsv
+[2.752s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/__init__.py
+[2.815s] Compiling '/home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/__init__.py'...
+[2.820s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/action
+[2.822s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/action/_robot_to_goal_s.c
+[2.822s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/action/__init__.py
+[2.822s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/action/_robot_to_goal.py
+[2.822s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/project_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[2.822s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/project_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[2.822s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/python3.8/site-packages/project/project_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[2.823s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/lib/libproject__python.so
+[2.823s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/action/RobotToGoal.idl
+[2.823s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/action/RobotToGoal.action
+[2.824s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/ament_index/resource_index/package_run_dependencies/project
+[2.824s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/ament_index/resource_index/parent_prefix_path/project
+[2.837s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/ament_prefix_path.sh
+[2.837s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/ament_prefix_path.dsv
+[2.837s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/path.sh
+[2.837s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/environment/path.dsv
+[2.837s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/local_setup.bash
+[2.837s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/local_setup.sh
+[2.838s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/local_setup.zsh
+[2.838s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/local_setup.dsv
+[2.838s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/package.dsv
+[2.838s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/ament_index/resource_index/packages/project
+[2.838s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_generator_cExport.cmake
+[2.838s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_generator_cExport-noconfig.cmake
+[2.838s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_introspection_cExport.cmake
+[2.838s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.838s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_cExport.cmake
+[2.838s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_cExport-noconfig.cmake
+[2.838s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_generator_cppExport.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_introspection_cppExport.cmake
+[2.839s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_cppExport.cmake
+[2.839s] -- Installing: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/project__rosidl_typesupport_cppExport-noconfig.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/rosidl_cmake-extras.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/ament_cmake_export_libraries-extras.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/ament_cmake_export_targets-extras.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.839s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.840s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/projectConfig.cmake
+[2.840s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/cmake/projectConfig-version.cmake
+[2.840s] -- Up-to-date: /home/yahboom/Desktop/roscourse_final_ws/install/project/share/project/package.xml
+[2.858s] Invoked command in '/home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --install /home/yahboom/Desktop/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/project
