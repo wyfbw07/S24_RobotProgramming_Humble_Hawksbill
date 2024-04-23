@@ -19,7 +19,7 @@ class SquareMovement(Node):
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
         
     def set_velocity_callback(self,request,response):
-	self.velocity = request.velocity
+	self.linear_speed = request.velocity
 	self.get_logger().info('Velocity set: %s' % (self.velocity))
 	response.ret = 1
 	return response
