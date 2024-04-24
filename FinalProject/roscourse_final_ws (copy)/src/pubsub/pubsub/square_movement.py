@@ -9,19 +9,6 @@ from Rosmaster_Lib import Rosmaster
 from Speech_Lib import Speech
 from std_msgs.msg import Float32
 
-class yahboomcar_driver(Node):
-    def __init__(self, name):
-	super().__init__(name)
-
-	self.car = Rosmaster()
-		
-	#create timer
-	self.timer = self.create_timer(0.1, self.pub_data)
-
-	#create and init variable
-	self.edition = Float32()
-	self.edition.data = 1.0
-	self.car.create_receive_threading()
 
 class SquareMovement(Node):
     def __init__(self):
@@ -34,6 +21,13 @@ class SquareMovement(Node):
         self.side_length = 1.0  # meters
         self.current_angle = 0.0  # radians
         self.current_side = 0
+
+        self.car = Rosmaster()
+
+	    #create and init variable
+        self.edition = Float32()
+        self.edition.data = 1.0
+        self.car.create_receive_threading()
         
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
         
@@ -46,24 +40,33 @@ class SquareMovement(Node):
     def move_robot(self):
         twist = Twist()
 
-        # Move forward
-        if self.current_side % 4 == 0:
-            twist.linear.x = self.linear_speed
-            twist.angular.z = 0.0
-        # Rotate 90 degrees
-        elif self.current_side % 4 == 1:
-            twist.linear.x = 0.0
-            twist.angular.z = self.angular_speed
-        # Move forward
-        elif self.current_side % 4 == 2:
-            twist.linear.x = self.linear_speed
-            twist.angular.z = 0.0
-        # Rotate 90 degrees
-        elif self.current_side % 4 == 3:
-            twist.linear.x = 0.0
-            twist.angular.z = self.angular_speed
+        speech_r = spe.speech_read()
+		#speech
+        #print(speech_r)
+        if speech_r == 4:
+            # Move forward
+            if self.current_side % 4 == 0:
+                twist.linear.x = self.linear_speed
+                twist.angular.z = 0.0
+             # Rotate 90 degrees
+            elif self.current_side % 4 == 1:
+                twist.linear.x = 0.0
+                twist.angular.z = self.angular_speed
+            # Move forward
+            elif self.current_side % 4 == 2:
+                twist.linear.x = self.linear_speed
+                twist.angular.z = 0.0
+            # Rotate 90 degrees
+            elif self.current_side % 4 == 3:
+                twist.linear.x = 0.0
+                twist.angular.z = self.angular_speed
+            self.publisher_.publish(twist)
 
-        self.publisher_.publish(twist)
+        if speech_r == 2 or speech_r == 0 :
+            twist.linear.x = 0.0
+            twist.angular.z = 0.0
+            twist.angular.z = 0.0
+            self.publisher_.publish(twist)
 
         # Update current angle and side
         if self.current_side % 4 == 1 or self.current_side % 4 == 3:
