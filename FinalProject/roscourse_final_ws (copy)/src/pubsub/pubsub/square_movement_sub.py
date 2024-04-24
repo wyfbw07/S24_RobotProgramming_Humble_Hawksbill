@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 import math
 
 
-class square_movement_sub(Node):
+class movementSub(Node):
 
     def __init__(self):
         super().__init__('square_movement_sub')
@@ -25,7 +25,7 @@ class square_movement_sub(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    square_movement_sub = square_movement_sub()
+    square_movement_sub = movementSub()
 
     rclpy.spin(square_movement_sub)
 
