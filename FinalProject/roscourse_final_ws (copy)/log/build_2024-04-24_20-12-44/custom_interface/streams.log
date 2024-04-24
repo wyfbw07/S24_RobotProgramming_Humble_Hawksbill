@@ -1,0 +1,220 @@
+[0.174s] Invoking command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/custom_interface -DCMAKE_INSTALL_PREFIX=/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface
+[1.393s] -- The C compiler identification is GNU 9.4.0
+[2.080s] -- The CXX compiler identification is GNU 9.4.0
+[2.132s] -- Check for working C compiler: /usr/bin/cc
+[2.540s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.555s] -- Detecting C compiler ABI info
+[2.936s] -- Detecting C compiler ABI info - done
+[2.998s] -- Detecting C compile features
+[3.000s] -- Detecting C compile features - done
+[3.014s] -- Check for working CXX compiler: /usr/bin/c++
+[3.435s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.440s] -- Detecting CXX compiler ABI info
+[3.855s] -- Detecting CXX compiler ABI info - done
+[3.918s] -- Detecting CXX compile features
+[3.920s] -- Detecting CXX compile features - done
+[4.014s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.281s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.281s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.259s] -- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[7.129s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[7.727s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.919s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.818s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[9.082s] -- Found FastRTPS: /opt/ros/foxy/include  
+[9.987s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.670s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[10.961s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[11.746s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[13.598s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[14.303s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[14.481s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[14.532s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[14.736s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[14.737s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[14.738s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[14.738s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[14.877s] -- Found PythonExtra: .so  
+[15.489s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.512s] -- Added test 'lint_cmake' to check CMake code style
+[15.531s] -- Added test 'xmllint' to check XML markup files
+[15.604s] -- Configuring done
+[15.871s] -- Generating done
+[15.886s] -- Build files have been written to: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface
+[15.928s] Invoked command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/custom_interface -DCMAKE_INSTALL_PREFIX=/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface
+[15.938s] Invoking command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --build /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface -- -j4 -l4
+[16.168s] [35m[1mScanning dependencies of target custom_interface__cpp[0m
+[16.177s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[16.235s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[17.787s] [35m[1mScanning dependencies of target custom_interface__rosidl_generator_c[0m
+[17.793s] [  6%] Built target custom_interface__cpp
+[17.863s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[17.869s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[17.878s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.881s] [ 19%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/set_velocity__functions.c.o[0m
+[18.456s] [ 22%] [32m[1mLinking C shared library libcustom_interface__rosidl_generator_c.so[0m
+[18.923s] [ 22%] Built target custom_interface__rosidl_generator_c
+[19.033s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[19.454s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_cpp[0m
+[19.676s] [ 29%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/set_velocity__type_support.cpp.o[0m
+[19.685s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_fastrtps_cpp[0m
+[19.713s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_introspection_cpp[0m
+[19.799s] [ 32%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/set_velocity__type_support.cpp.o[0m
+[19.875s] [ 35%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/set_velocity__type_support.cpp.o[0m
+[20.810s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_introspection_c[0m
+[21.037s] [ 38%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/set_velocity__type_support.c.o[0m
+[21.337s] [ 41%] [32m[1mLinking C shared library libcustom_interface__rosidl_typesupport_introspection_c.so[0m
+[21.645s] [ 41%] Built target custom_interface__rosidl_typesupport_introspection_c
+[21.770s] [ 45%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[21.884s] [ 48%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_cpp.so[0m
+[22.009s] [ 51%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_introspection_cpp.so[0m
+[22.188s] [ 51%] Built target custom_interface__rosidl_typesupport_cpp
+[22.282s] [ 51%] Built target custom_interface__rosidl_typesupport_introspection_cpp
+[22.913s] [ 54%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.136s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_c[0m
+[23.230s] [ 58%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/srv/set_velocity__type_support.cpp.o[0m
+[23.355s] [ 58%] Built target custom_interface__rosidl_typesupport_fastrtps_cpp
+[23.398s] [ 61%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_c.so[0m
+[23.417s] [ 64%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[23.608s] [ 64%] Built target custom_interface__rosidl_typesupport_c
+[24.763s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_fastrtps_c[0m
+[24.882s] [ 67%] [32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/srv/detail/set_velocity__type_support_c.cpp.o[0m
+[26.544s] [ 70%] [32m[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_c.so[0m
+[26.983s] [ 70%] Built target custom_interface__rosidl_typesupport_fastrtps_c
+[27.040s] [35m[1mScanning dependencies of target custom_interface[0m
+[27.095s] [ 70%] Built target custom_interface
+[27.153s] [35m[1mScanning dependencies of target custom_interface__py[0m
+[27.211s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[29.438s] [ 74%] Built target custom_interface__py
+[29.495s] [35m[1mScanning dependencies of target custom_interface__python[0m
+[29.661s] [ 77%] [32mBuilding C object CMakeFiles/custom_interface__python.dir/rosidl_generator_py/custom_interface/srv/_set_velocity_s.c.o[0m
+[30.217s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/libcustom_interface__python.so[0m
+[30.437s] [ 80%] Built target custom_interface__python
+[30.494s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_c__pyext[0m
+[30.500s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[30.503s] [35m[1mScanning dependencies of target custom_interface__rosidl_typesupport_introspection_c__pyext[0m
+[30.599s] [ 83%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[30.636s] [ 87%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[30.641s] [ 90%] [32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[31.080s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.097s] [ 96%] [32m[1mLinking CXX shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.104s] [100%] [32m[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.348s] [100%] Built target custom_interface__rosidl_typesupport_c__pyext
+[31.372s] [100%] Built target custom_interface__rosidl_typesupport_introspection_c__pyext
+[31.445s] [100%] Built target custom_interface__rosidl_typesupport_fastrtps_c__pyext
+[31.521s] Invoked command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --build /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface -- -j4 -l4
+[31.885s] Invoking command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --install /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface
+[31.936s] -- Install configuration: ""
+[31.937s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/rosidl_interfaces/custom_interface
+[31.938s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface
+[31.939s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv
+[31.939s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail
+[31.939s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__functions.c
+[31.940s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__type_support.h
+[31.940s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__struct.h
+[31.941s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__functions.h
+[31.942s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/set_velocity.h
+[31.943s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg
+[31.943s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_generator_c__visibility_control.h
+[31.944s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/library_path.sh
+[31.945s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/library_path.dsv
+[31.948s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so
+[31.949s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so" to ""
+[31.950s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface
+[31.951s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv
+[31.951s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail
+[31.952s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_fastrtps_c.h
+[31.952s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg
+[31.953s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.953s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so
+[31.955s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[31.956s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface
+[31.957s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv
+[31.958s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail
+[31.959s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[31.959s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/dds_fastrtps
+[31.960s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg
+[31.961s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.962s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so
+[31.963s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.963s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface
+[31.964s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv
+[31.965s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail
+[31.965s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__type_support.c
+[31.966s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_introspection_c.h
+[31.966s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg
+[31.966s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.967s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so
+[31.974s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so" to ""
+[31.974s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so
+[31.975s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so" to ""
+[31.975s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface
+[31.976s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv
+[31.976s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail
+[31.976s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__struct.hpp
+[31.977s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__traits.hpp
+[31.977s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__builder.hpp
+[31.978s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/set_velocity.hpp
+[31.978s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface
+[31.978s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv
+[31.979s] -- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail
+[31.979s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_introspection_cpp.hpp
+[31.979s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__type_support.cpp
+[31.980s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so
+[31.980s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[31.981s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so
+[31.981s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so" to ""
+[31.982s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/pythonpath.sh
+[31.982s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/pythonpath.dsv
+[31.982s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/__init__.py
+[32.199s] Compiling '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/__init__.py'...
+[32.222s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv
+[32.223s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv/__init__.py
+[32.223s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv/_set_velocity_s.c
+[32.224s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv/_set_velocity.py
+[32.225s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[32.228s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[32.229s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[32.231s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[32.232s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[32.234s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[32.234s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__python.so
+[32.236s] -- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__python.so" to ""
+[32.237s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity.idl
+[32.237s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity.srv
+[32.238s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity_Request.msg
+[32.239s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity_Response.msg
+[32.240s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface
+[32.241s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/parent_prefix_path/custom_interface
+[32.242s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/ament_prefix_path.sh
+[32.243s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/ament_prefix_path.dsv
+[32.244s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/path.sh
+[32.245s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/path.dsv
+[32.246s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.bash
+[32.246s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.sh
+[32.247s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.zsh
+[32.249s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.dsv
+[32.250s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/package.dsv
+[32.251s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/packages/custom_interface
+[32.253s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_generator_cExport.cmake
+[32.254s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_generator_cExport-noconfig.cmake
+[32.254s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport.cmake
+[32.255s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[32.257s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport.cmake
+[32.258s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport-noconfig.cmake
+[32.259s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_generator_cppExport.cmake
+[32.261s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport.cmake
+[32.262s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[32.264s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport.cmake
+[32.273s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[32.274s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/rosidl_cmake-extras.cmake
+[32.275s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[32.275s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[32.276s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_targets-extras.cmake
+[32.276s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[32.276s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[32.277s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[32.277s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig.cmake
+[32.278s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig-version.cmake
+[32.278s] -- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/package.xml
+[32.292s] Invoked command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy /usr/bin/cmake --install /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface

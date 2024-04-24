@@ -1,0 +1,3 @@
+source;share/pubsub/hook/pythonpath.ps1
+source;share/pubsub/hook/pythonpath.dsv
+source;share/pubsub/hook/pythonpath.sh

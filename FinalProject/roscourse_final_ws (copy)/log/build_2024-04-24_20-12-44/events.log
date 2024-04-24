@@ -1,0 +1,601 @@
+[0.000000] (-) TimerEvent: {}
+[0.003921] (custom_interface) JobQueued: {'identifier': 'custom_interface', 'dependencies': OrderedDict()}
+[0.004095] (pubsub) JobQueued: {'identifier': 'pubsub', 'dependencies': OrderedDict()}
+[0.004245] (custom_interface) JobStarted: {'identifier': 'custom_interface'}
+[0.101009] (pubsub) JobStarted: {'identifier': 'pubsub'}
+[0.101437] (-) TimerEvent: {}
+[0.168537] (custom_interface) JobProgress: {'identifier': 'custom_interface', 'progress': 'cmake'}
+[0.174044] (custom_interface) Command: {'cmd': ['/usr/bin/cmake', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/custom_interface', '-DCMAKE_INSTALL_PREFIX=/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface'], 'cwd': '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface', 'env': OrderedDict([('CAMERA_TYPE', 'astraplus'), ('HOSTNAME', 'jetson-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/yahboomcar_ros2_ws/software/orbslam2/Pangolin-0.6/build/src/:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/root/yahboomcar_ros2_ws/software/library_ws/install:/root/yahboomcar_ros2_ws/yahboomcar_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('ORB_SLAM2_ROOT_DIR', '/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master'), ('DISPLAY', ':0'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/foxy'), ('RPLIDAR_TYPE', 'a1'), ('PWD', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface'), ('PYTHONPATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy')]), 'shell': False}
+[0.201874] (-) TimerEvent: {}
+[0.303554] (-) TimerEvent: {}
+[0.407271] (-) TimerEvent: {}
+[0.507999] (-) TimerEvent: {}
+[0.608651] (-) TimerEvent: {}
+[0.709494] (-) TimerEvent: {}
+[0.810203] (-) TimerEvent: {}
+[0.910832] (-) TimerEvent: {}
+[1.011455] (-) TimerEvent: {}
+[1.112098] (-) TimerEvent: {}
+[1.213379] (-) TimerEvent: {}
+[1.331685] (-) TimerEvent: {}
+[1.396032] (custom_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.431921] (-) TimerEvent: {}
+[1.534233] (-) TimerEvent: {}
+[1.637762] (-) TimerEvent: {}
+[1.738560] (-) TimerEvent: {}
+[1.839456] (-) TimerEvent: {}
+[1.942818] (-) TimerEvent: {}
+[2.043745] (-) TimerEvent: {}
+[2.083311] (custom_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.135641] (custom_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.143884] (-) TimerEvent: {}
+[2.244538] (-) TimerEvent: {}
+[2.345276] (-) TimerEvent: {}
+[2.445931] (-) TimerEvent: {}
+[2.543999] (custom_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.546046] (-) TimerEvent: {}
+[2.558646] (custom_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.648417] (-) TimerEvent: {}
+[2.749954] (-) TimerEvent: {}
+[2.850636] (-) TimerEvent: {}
+[2.939572] (custom_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.950782] (-) TimerEvent: {}
+[3.001860] (custom_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.003745] (custom_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.017544] (custom_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.050950] (-) TimerEvent: {}
+[3.152425] (-) TimerEvent: {}
+[3.253242] (-) TimerEvent: {}
+[3.353881] (-) TimerEvent: {}
+[3.439148] (custom_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.443532] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.454057] (-) TimerEvent: {}
+[3.555201] (-) TimerEvent: {}
+[3.656109] (-) TimerEvent: {}
+[3.756820] (-) TimerEvent: {}
+[3.857454] (-) TimerEvent: {}
+[3.859111] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.921902] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.924208] (custom_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.957646] (-) TimerEvent: {}
+[4.017576] (custom_interface) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[4.057818] (-) TimerEvent: {}
+[4.124901] (pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/pubsub', 'build', '--build-base', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build', 'install', '--record', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/install.log', '--install-scripts', '$base/lib/pubsub', '--single-version-externally-managed'], 'cwd': '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/pubsub', 'env': {'CAMERA_TYPE': 'astraplus', 'HOSTNAME': 'jetson-desktop', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/yahboomcar_ros2_ws/software/orbslam2/Pangolin-0.6/build/src/:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', '_colcon_cd_root': '/root/yahboomcar_ros2_ws/yahboomcar_ws', 'ROBOT_TYPE': 'x3', 'COLCON_PREFIX_PATH': '/root/yahboomcar_ros2_ws/software/library_ws/install:/root/yahboomcar_ros2_ws/yahboomcar_ws/install', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'QT_X11_NO_MITSHM': '1', 'PATH': '/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'ORB_SLAM2_ROOT_DIR': '/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master', 'DISPLAY': ':0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '14', 'AMENT_PREFIX_PATH': '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/foxy', 'RPLIDAR_TYPE': 'a1', 'PWD': '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub', 'PYTHONPATH': '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/prefix_override:/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs'}, 'shell': False}
+[4.158009] (-) TimerEvent: {}
+[4.258765] (-) TimerEvent: {}
+[4.284488] (custom_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.285329] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.358938] (-) TimerEvent: {}
+[4.460860] (-) TimerEvent: {}
+[4.561499] (-) TimerEvent: {}
+[4.663102] (-) TimerEvent: {}
+[4.765400] (-) TimerEvent: {}
+[4.866084] (-) TimerEvent: {}
+[4.966770] (-) TimerEvent: {}
+[5.067472] (-) TimerEvent: {}
+[5.168146] (-) TimerEvent: {}
+[5.269051] (-) TimerEvent: {}
+[5.371331] (-) TimerEvent: {}
+[5.473372] (-) TimerEvent: {}
+[5.515994] (pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[5.518885] (pubsub) StdoutLine: {'line': b'creating ../../build/pubsub/pubsub.egg-info\n'}
+[5.532251] (pubsub) StdoutLine: {'line': b'writing ../../build/pubsub/pubsub.egg-info/PKG-INFO\n'}
+[5.532759] (pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/pubsub/pubsub.egg-info/dependency_links.txt\n'}
+[5.533190] (pubsub) StdoutLine: {'line': b'writing entry points to ../../build/pubsub/pubsub.egg-info/entry_points.txt\n'}
+[5.533577] (pubsub) StdoutLine: {'line': b'writing requirements to ../../build/pubsub/pubsub.egg-info/requires.txt\n'}
+[5.533946] (pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/pubsub/pubsub.egg-info/top_level.txt\n'}
+[5.534307] (pubsub) StdoutLine: {'line': b"writing manifest file '../../build/pubsub/pubsub.egg-info/SOURCES.txt'\n"}
+[5.573525] (-) TimerEvent: {}
+[5.676272] (-) TimerEvent: {}
+[5.712334] (pubsub) StdoutLine: {'line': b"reading manifest file '../../build/pubsub/pubsub.egg-info/SOURCES.txt'\n"}
+[5.714836] (pubsub) StdoutLine: {'line': b"writing manifest file '../../build/pubsub/pubsub.egg-info/SOURCES.txt'\n"}
+[5.715476] (pubsub) StdoutLine: {'line': b'running build\n'}
+[5.716240] (pubsub) StdoutLine: {'line': b'running build_py\n'}
+[5.716691] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build\n'}
+[5.718494] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib\n'}
+[5.719905] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub\n'}
+[5.720851] (pubsub) StdoutLine: {'line': b'copying pubsub/__init__.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub\n'}
+[5.721572] (pubsub) StdoutLine: {'line': b'copying pubsub/square_movement_sub.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub\n'}
+[5.722378] (pubsub) StdoutLine: {'line': b'copying pubsub/square_movement.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub\n'}
+[5.723365] (pubsub) StdoutLine: {'line': b'running install\n'}
+[5.727230] (pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[5.733451] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub\n'}
+[5.734483] (pubsub) StdoutLine: {'line': b'copying /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub/__init__.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub\n'}
+[5.735163] (pubsub) StdoutLine: {'line': b'copying /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub/square_movement_sub.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub\n'}
+[5.735676] (pubsub) StdoutLine: {'line': b'copying /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/build/lib/pubsub/square_movement.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub\n'}
+[5.738683] (pubsub) StdoutLine: {'line': b'byte-compiling /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub/__init__.py to __init__.cpython-38.pyc\n'}
+[5.744046] (pubsub) StdoutLine: {'line': b'byte-compiling /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub/square_movement_sub.py to square_movement_sub.cpython-38.pyc\n'}
+[5.745908] (pubsub) StdoutLine: {'line': b'byte-compiling /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub/square_movement.py to square_movement.cpython-38.pyc\n'}
+[5.747890] (pubsub) StdoutLine: {'line': b'running install_data\n'}
+[5.750834] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share\n'}
+[5.751618] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share/ament_index\n'}
+[5.752097] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share/ament_index/resource_index\n'}
+[5.752587] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share/ament_index/resource_index/packages\n'}
+[5.753092] (pubsub) StdoutLine: {'line': b'copying resource/pubsub -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share/ament_index/resource_index/packages\n'}
+[5.753500] (pubsub) StdoutLine: {'line': b'creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share/pubsub\n'}
+[5.753889] (pubsub) StdoutLine: {'line': b'copying package.xml -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/share/pubsub\n'}
+[5.754299] (pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.760329] (pubsub) StdoutLine: {'line': b'Copying ../../build/pubsub/pubsub.egg-info to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/python3.8/site-packages/pubsub-0.0.0-py3.8.egg-info\n'}
+[5.764109] (pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[5.776478] (-) TimerEvent: {}
+[5.858396] (pubsub) StdoutLine: {'line': b'Installing final_pub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/pubsub\n'}
+[5.859055] (pubsub) StdoutLine: {'line': b'Installing final_sub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/pubsub\n'}
+[5.860837] (pubsub) StdoutLine: {'line': b'Installing square_movement script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/pubsub\n'}
+[5.863681] (pubsub) StdoutLine: {'line': b'Installing square_movement_sub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/pubsub\n'}
+[5.864259] (pubsub) StdoutLine: {'line': b'Installing test_pub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/pubsub/lib/pubsub\n'}
+[5.865135] (pubsub) StdoutLine: {'line': b"writing list of installed files to '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/pubsub/install.log'\n"}
+[5.876664] (-) TimerEvent: {}
+[5.973641] (pubsub) CommandEnded: {'returncode': 0}
+[5.978738] (-) TimerEvent: {}
+[6.058537] (pubsub) JobEnded: {'identifier': 'pubsub', 'rc': 0}
+[6.078914] (-) TimerEvent: {}
+[6.179512] (-) TimerEvent: {}
+[6.254590] (custom_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[6.280583] (-) TimerEvent: {}
+[6.381480] (-) TimerEvent: {}
+[6.482103] (-) TimerEvent: {}
+[6.582903] (-) TimerEvent: {}
+[6.683614] (-) TimerEvent: {}
+[6.784313] (-) TimerEvent: {}
+[6.885040] (-) TimerEvent: {}
+[6.985837] (-) TimerEvent: {}
+[7.086761] (-) TimerEvent: {}
+[7.133293] (custom_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[7.186922] (-) TimerEvent: {}
+[7.287709] (-) TimerEvent: {}
+[7.390383] (-) TimerEvent: {}
+[7.491050] (-) TimerEvent: {}
+[7.591706] (-) TimerEvent: {}
+[7.692356] (-) TimerEvent: {}
+[7.730825] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.792536] (-) TimerEvent: {}
+[7.893332] (-) TimerEvent: {}
+[7.922913] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[7.993545] (-) TimerEvent: {}
+[8.094270] (-) TimerEvent: {}
+[8.194878] (-) TimerEvent: {}
+[8.295607] (-) TimerEvent: {}
+[8.396280] (-) TimerEvent: {}
+[8.497227] (-) TimerEvent: {}
+[8.597898] (-) TimerEvent: {}
+[8.698616] (-) TimerEvent: {}
+[8.799264] (-) TimerEvent: {}
+[8.822310] (custom_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[8.899424] (-) TimerEvent: {}
+[9.000179] (-) TimerEvent: {}
+[9.086088] (custom_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[9.100341] (-) TimerEvent: {}
+[9.201135] (-) TimerEvent: {}
+[9.301872] (-) TimerEvent: {}
+[9.402586] (-) TimerEvent: {}
+[9.503250] (-) TimerEvent: {}
+[9.603994] (-) TimerEvent: {}
+[9.704672] (-) TimerEvent: {}
+[9.805423] (-) TimerEvent: {}
+[9.906427] (-) TimerEvent: {}
+[9.990863] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.006578] (-) TimerEvent: {}
+[10.107312] (-) TimerEvent: {}
+[10.207946] (-) TimerEvent: {}
+[10.308632] (-) TimerEvent: {}
+[10.409360] (-) TimerEvent: {}
+[10.510077] (-) TimerEvent: {}
+[10.611313] (-) TimerEvent: {}
+[10.674026] (custom_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[10.711468] (-) TimerEvent: {}
+[10.812121] (-) TimerEvent: {}
+[10.912805] (-) TimerEvent: {}
+[10.965021] (custom_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[11.012968] (-) TimerEvent: {}
+[11.113627] (-) TimerEvent: {}
+[11.214478] (-) TimerEvent: {}
+[11.315151] (-) TimerEvent: {}
+[11.416853] (-) TimerEvent: {}
+[11.517686] (-) TimerEvent: {}
+[11.618335] (-) TimerEvent: {}
+[11.719133] (-) TimerEvent: {}
+[11.749984] (custom_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[11.819338] (-) TimerEvent: {}
+[11.920032] (-) TimerEvent: {}
+[12.020857] (-) TimerEvent: {}
+[12.121461] (-) TimerEvent: {}
+[12.222179] (-) TimerEvent: {}
+[12.323052] (-) TimerEvent: {}
+[12.423822] (-) TimerEvent: {}
+[12.524472] (-) TimerEvent: {}
+[12.625400] (-) TimerEvent: {}
+[12.726185] (-) TimerEvent: {}
+[12.826854] (-) TimerEvent: {}
+[12.927545] (-) TimerEvent: {}
+[13.028287] (-) TimerEvent: {}
+[13.129005] (-) TimerEvent: {}
+[13.229768] (-) TimerEvent: {}
+[13.330461] (-) TimerEvent: {}
+[13.431145] (-) TimerEvent: {}
+[13.531855] (-) TimerEvent: {}
+[13.602134] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[13.632048] (-) TimerEvent: {}
+[13.733163] (-) TimerEvent: {}
+[13.833889] (-) TimerEvent: {}
+[13.934556] (-) TimerEvent: {}
+[14.035200] (-) TimerEvent: {}
+[14.136153] (-) TimerEvent: {}
+[14.236830] (-) TimerEvent: {}
+[14.307079] (custom_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.336991] (-) TimerEvent: {}
+[14.437717] (-) TimerEvent: {}
+[14.485188] (custom_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[14.535390] (custom_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[14.537862] (-) TimerEvent: {}
+[14.638602] (-) TimerEvent: {}
+[14.739220] (-) TimerEvent: {}
+[14.740261] (custom_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[14.741047] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[14.741575] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[14.741975] (custom_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[14.839438] (-) TimerEvent: {}
+[14.880139] (custom_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[14.939612] (-) TimerEvent: {}
+[15.040415] (-) TimerEvent: {}
+[15.141215] (-) TimerEvent: {}
+[15.241900] (-) TimerEvent: {}
+[15.342646] (-) TimerEvent: {}
+[15.443343] (-) TimerEvent: {}
+[15.492435] (custom_interface) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[15.515599] (custom_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[15.535149] (custom_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[15.543641] (-) TimerEvent: {}
+[15.607489] (custom_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.643812] (-) TimerEvent: {}
+[15.744482] (-) TimerEvent: {}
+[15.845124] (-) TimerEvent: {}
+[15.874102] (custom_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[15.889443] (custom_interface) StdoutLine: {'line': b'-- Build files have been written to: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface\n'}
+[15.931521] (custom_interface) CommandEnded: {'returncode': 0}
+[15.933810] (custom_interface) JobProgress: {'identifier': 'custom_interface', 'progress': 'build'}
+[15.940898] (custom_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface', '--', '-j4', '-l4'], 'cwd': '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface', 'env': OrderedDict([('CAMERA_TYPE', 'astraplus'), ('HOSTNAME', 'jetson-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/yahboomcar_ros2_ws/software/orbslam2/Pangolin-0.6/build/src/:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/root/yahboomcar_ros2_ws/software/library_ws/install:/root/yahboomcar_ros2_ws/yahboomcar_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('ORB_SLAM2_ROOT_DIR', '/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master'), ('DISPLAY', ':0'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/foxy'), ('RPLIDAR_TYPE', 'a1'), ('PWD', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface'), ('PYTHONPATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy')]), 'shell': False}
+[15.945298] (-) TimerEvent: {}
+[16.046029] (-) TimerEvent: {}
+[16.146691] (-) TimerEvent: {}
+[16.171728] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__cpp\x1b[0m\n'}
+[16.181055] (custom_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[16.238508] (custom_interface) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[16.246857] (-) TimerEvent: {}
+[16.347499] (-) TimerEvent: {}
+[16.450416] (-) TimerEvent: {}
+[16.556385] (-) TimerEvent: {}
+[16.657221] (-) TimerEvent: {}
+[16.759131] (-) TimerEvent: {}
+[16.859780] (-) TimerEvent: {}
+[16.961094] (-) TimerEvent: {}
+[17.066963] (-) TimerEvent: {}
+[17.167906] (-) TimerEvent: {}
+[17.268895] (-) TimerEvent: {}
+[17.369905] (-) TimerEvent: {}
+[17.470523] (-) TimerEvent: {}
+[17.571202] (-) TimerEvent: {}
+[17.671976] (-) TimerEvent: {}
+[17.774116] (-) TimerEvent: {}
+[17.790633] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_generator_c\x1b[0m\n'}
+[17.796823] (custom_interface) StdoutLine: {'line': b'[  6%] Built target custom_interface__cpp\n'}
+[17.867106] (custom_interface) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.873301] (custom_interface) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.874244] (-) TimerEvent: {}
+[17.881951] (custom_interface) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[17.884217] (custom_interface) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_generator_c.dir/rosidl_generator_c/custom_interface/srv/detail/set_velocity__functions.c.o\x1b[0m\n'}
+[17.974435] (-) TimerEvent: {}
+[18.075619] (-) TimerEvent: {}
+[18.176390] (-) TimerEvent: {}
+[18.277121] (-) TimerEvent: {}
+[18.381546] (-) TimerEvent: {}
+[18.460308] (custom_interface) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcustom_interface__rosidl_generator_c.so\x1b[0m\n'}
+[18.481712] (-) TimerEvent: {}
+[18.582352] (-) TimerEvent: {}
+[18.682993] (-) TimerEvent: {}
+[18.784561] (-) TimerEvent: {}
+[18.885337] (-) TimerEvent: {}
+[18.926927] (custom_interface) StdoutLine: {'line': b'[ 22%] Built target custom_interface__rosidl_generator_c\n'}
+[18.985972] (-) TimerEvent: {}
+[19.036625] (custom_interface) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[19.086140] (-) TimerEvent: {}
+[19.186797] (-) TimerEvent: {}
+[19.288872] (-) TimerEvent: {}
+[19.390921] (-) TimerEvent: {}
+[19.458235] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[19.493518] (-) TimerEvent: {}
+[19.605338] (-) TimerEvent: {}
+[19.679617] (custom_interface) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_interface/srv/set_velocity__type_support.cpp.o\x1b[0m\n'}
+[19.689079] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[19.705537] (-) TimerEvent: {}
+[19.716299] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[19.802299] (custom_interface) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_interface/srv/detail/set_velocity__type_support.cpp.o\x1b[0m\n'}
+[19.805742] (-) TimerEvent: {}
+[19.878523] (custom_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_interface/srv/detail/dds_fastrtps/set_velocity__type_support.cpp.o\x1b[0m\n'}
+[19.905906] (-) TimerEvent: {}
+[20.007786] (-) TimerEvent: {}
+[20.110378] (-) TimerEvent: {}
+[20.211209] (-) TimerEvent: {}
+[20.313003] (-) TimerEvent: {}
+[20.414937] (-) TimerEvent: {}
+[20.517212] (-) TimerEvent: {}
+[20.619700] (-) TimerEvent: {}
+[20.725628] (-) TimerEvent: {}
+[20.813466] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[20.825810] (-) TimerEvent: {}
+[20.928849] (-) TimerEvent: {}
+[21.030323] (-) TimerEvent: {}
+[21.041040] (custom_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_interface/srv/detail/set_velocity__type_support.c.o\x1b[0m\n'}
+[21.130503] (-) TimerEvent: {}
+[21.231238] (-) TimerEvent: {}
+[21.341075] (custom_interface) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libcustom_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[21.341735] (-) TimerEvent: {}
+[21.443924] (-) TimerEvent: {}
+[21.546091] (-) TimerEvent: {}
+[21.647483] (-) TimerEvent: {}
+[21.648776] (custom_interface) StdoutLine: {'line': b'[ 41%] Built target custom_interface__rosidl_typesupport_introspection_c\n'}
+[21.747669] (-) TimerEvent: {}
+[21.773759] (custom_interface) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[21.847855] (-) TimerEvent: {}
+[21.887566] (custom_interface) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[21.948058] (-) TimerEvent: {}
+[22.013056] (custom_interface) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[22.048243] (-) TimerEvent: {}
+[22.149621] (-) TimerEvent: {}
+[22.191729] (custom_interface) StdoutLine: {'line': b'[ 51%] Built target custom_interface__rosidl_typesupport_cpp\n'}
+[22.249792] (-) TimerEvent: {}
+[22.286024] (custom_interface) StdoutLine: {'line': b'[ 51%] Built target custom_interface__rosidl_typesupport_introspection_cpp\n'}
+[22.349968] (-) TimerEvent: {}
+[22.450714] (-) TimerEvent: {}
+[22.551923] (-) TimerEvent: {}
+[22.652539] (-) TimerEvent: {}
+[22.753269] (-) TimerEvent: {}
+[22.854010] (-) TimerEvent: {}
+[22.917005] (custom_interface) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[22.954228] (-) TimerEvent: {}
+[23.054988] (-) TimerEvent: {}
+[23.139720] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_c\x1b[0m\n'}
+[23.155190] (-) TimerEvent: {}
+[23.233533] (custom_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_interface/srv/set_velocity__type_support.cpp.o\x1b[0m\n'}
+[23.255423] (-) TimerEvent: {}
+[23.357210] (-) TimerEvent: {}
+[23.359217] (custom_interface) StdoutLine: {'line': b'[ 58%] Built target custom_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[23.401629] (custom_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[23.420608] (custom_interface) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[23.457390] (-) TimerEvent: {}
+[23.558106] (-) TimerEvent: {}
+[23.611854] (custom_interface) StdoutLine: {'line': b'[ 64%] Built target custom_interface__rosidl_typesupport_c\n'}
+[23.658312] (-) TimerEvent: {}
+[23.759293] (-) TimerEvent: {}
+[23.859900] (-) TimerEvent: {}
+[23.960637] (-) TimerEvent: {}
+[24.061361] (-) TimerEvent: {}
+[24.162055] (-) TimerEvent: {}
+[24.262721] (-) TimerEvent: {}
+[24.363638] (-) TimerEvent: {}
+[24.464305] (-) TimerEvent: {}
+[24.565049] (-) TimerEvent: {}
+[24.665903] (-) TimerEvent: {}
+[24.766648] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[24.767202] (-) TimerEvent: {}
+[24.867738] (-) TimerEvent: {}
+[24.886042] (custom_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_interface/srv/detail/set_velocity__type_support_c.cpp.o\x1b[0m\n'}
+[24.967914] (-) TimerEvent: {}
+[25.068627] (-) TimerEvent: {}
+[25.169387] (-) TimerEvent: {}
+[25.270168] (-) TimerEvent: {}
+[25.371118] (-) TimerEvent: {}
+[25.471750] (-) TimerEvent: {}
+[25.572374] (-) TimerEvent: {}
+[25.673141] (-) TimerEvent: {}
+[25.773828] (-) TimerEvent: {}
+[25.874789] (-) TimerEvent: {}
+[25.975425] (-) TimerEvent: {}
+[26.076178] (-) TimerEvent: {}
+[26.176865] (-) TimerEvent: {}
+[26.277635] (-) TimerEvent: {}
+[26.378366] (-) TimerEvent: {}
+[26.479170] (-) TimerEvent: {}
+[26.547793] (custom_interface) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[26.579385] (-) TimerEvent: {}
+[26.680104] (-) TimerEvent: {}
+[26.780845] (-) TimerEvent: {}
+[26.882690] (-) TimerEvent: {}
+[26.983456] (-) TimerEvent: {}
+[26.986777] (custom_interface) StdoutLine: {'line': b'[ 70%] Built target custom_interface__rosidl_typesupport_fastrtps_c\n'}
+[27.043675] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface\x1b[0m\n'}
+[27.083638] (-) TimerEvent: {}
+[27.098945] (custom_interface) StdoutLine: {'line': b'[ 70%] Built target custom_interface\n'}
+[27.157045] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__py\x1b[0m\n'}
+[27.183881] (-) TimerEvent: {}
+[27.214501] (custom_interface) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[27.284089] (-) TimerEvent: {}
+[27.384812] (-) TimerEvent: {}
+[27.485470] (-) TimerEvent: {}
+[27.586094] (-) TimerEvent: {}
+[27.686713] (-) TimerEvent: {}
+[27.787313] (-) TimerEvent: {}
+[27.887962] (-) TimerEvent: {}
+[27.988681] (-) TimerEvent: {}
+[28.090008] (-) TimerEvent: {}
+[28.190643] (-) TimerEvent: {}
+[28.291230] (-) TimerEvent: {}
+[28.393080] (-) TimerEvent: {}
+[28.493775] (-) TimerEvent: {}
+[28.594455] (-) TimerEvent: {}
+[28.695141] (-) TimerEvent: {}
+[28.795843] (-) TimerEvent: {}
+[28.896540] (-) TimerEvent: {}
+[28.997460] (-) TimerEvent: {}
+[29.098253] (-) TimerEvent: {}
+[29.198952] (-) TimerEvent: {}
+[29.299602] (-) TimerEvent: {}
+[29.400317] (-) TimerEvent: {}
+[29.441928] (custom_interface) StdoutLine: {'line': b'[ 74%] Built target custom_interface__py\n'}
+[29.498947] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__python\x1b[0m\n'}
+[29.500425] (-) TimerEvent: {}
+[29.601143] (-) TimerEvent: {}
+[29.664967] (custom_interface) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_interface__python.dir/rosidl_generator_py/custom_interface/srv/_set_velocity_s.c.o\x1b[0m\n'}
+[29.702571] (-) TimerEvent: {}
+[29.803264] (-) TimerEvent: {}
+[29.903870] (-) TimerEvent: {}
+[30.004593] (-) TimerEvent: {}
+[30.105467] (-) TimerEvent: {}
+[30.206151] (-) TimerEvent: {}
+[30.220441] (custom_interface) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interface/libcustom_interface__python.so\x1b[0m\n'}
+[30.306328] (-) TimerEvent: {}
+[30.407184] (-) TimerEvent: {}
+[30.440926] (custom_interface) StdoutLine: {'line': b'[ 80%] Built target custom_interface__python\n'}
+[30.497837] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[30.503576] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[30.507348] (custom_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_interface__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[30.507858] (-) TimerEvent: {}
+[30.602683] (custom_interface) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[30.608506] (-) TimerEvent: {}
+[30.640134] (custom_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[30.644861] (custom_interface) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_interface/_custom_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[30.708688] (-) TimerEvent: {}
+[30.809456] (-) TimerEvent: {}
+[30.910754] (-) TimerEvent: {}
+[31.013346] (-) TimerEvent: {}
+[31.083859] (custom_interface) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[31.101191] (custom_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[31.107562] (custom_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[31.113693] (-) TimerEvent: {}
+[31.215512] (-) TimerEvent: {}
+[31.316336] (-) TimerEvent: {}
+[31.352133] (custom_interface) StdoutLine: {'line': b'[100%] Built target custom_interface__rosidl_typesupport_c__pyext\n'}
+[31.375917] (custom_interface) StdoutLine: {'line': b'[100%] Built target custom_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[31.416554] (-) TimerEvent: {}
+[31.448896] (custom_interface) StdoutLine: {'line': b'[100%] Built target custom_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[31.516787] (-) TimerEvent: {}
+[31.523972] (custom_interface) CommandEnded: {'returncode': 0}
+[31.617007] (-) TimerEvent: {}
+[31.718139] (-) TimerEvent: {}
+[31.819306] (-) TimerEvent: {}
+[31.834136] (custom_interface) JobProgress: {'identifier': 'custom_interface', 'progress': 'install'}
+[31.886813] (custom_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface'], 'cwd': '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface', 'env': OrderedDict([('CAMERA_TYPE', 'astraplus'), ('HOSTNAME', 'jetson-desktop'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/yahboomcar_ros2_ws/software/orbslam2/Pangolin-0.6/build/src/:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/DBoW2/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/Thirdparty/g2o/lib:/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera/lib:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('_colcon_cd_root', '/root/yahboomcar_ros2_ws/yahboomcar_ws'), ('ROBOT_TYPE', 'x3'), ('COLCON_PREFIX_PATH', '/root/yahboomcar_ros2_ws/software/library_ws/install:/root/yahboomcar_ros2_ws/yahboomcar_ws/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('ORB_SLAM2_ROOT_DIR', '/root/yahboomcar_ros2_ws/software/orbslam2/ORB_SLAM2-master'), ('DISPLAY', ':0'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '14'), ('AMENT_PREFIX_PATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/opt/ros/foxy'), ('RPLIDAR_TYPE', 'a1'), ('PWD', '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/build/custom_interface'), ('PYTHONPATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_web_savmap_interfaces:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/ydlidar_ros2_driver:/root/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/root/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/root/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/ros2_orbslam:/root/yahboomcar_ros2_ws/software/library_ws/install/robot_localization:/root/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/root/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/root/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera:/root/yahboomcar_ros2_ws/software/library_ws/install/astra_camera_msgs:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboom_app_save_map:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/root/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/opt/ros/foxy')]), 'shell': False}
+[31.919604] (-) TimerEvent: {}
+[31.939971] (custom_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.940927] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/rosidl_interfaces/custom_interface\n'}
+[31.941866] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface\n'}
+[31.942549] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv\n'}
+[31.943047] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail\n'}
+[31.943418] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__functions.c\n'}
+[31.943890] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__type_support.h\n'}
+[31.944357] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__struct.h\n'}
+[31.944924] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__functions.h\n'}
+[31.945833] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/set_velocity.h\n'}
+[31.946565] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg\n'}
+[31.947200] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[31.948192] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/library_path.sh\n'}
+[31.949188] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/library_path.dsv\n'}
+[31.951623] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so\n'}
+[31.952983] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_generator_c.so" to ""\n'}
+[31.953799] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface\n'}
+[31.954714] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv\n'}
+[31.955203] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail\n'}
+[31.955677] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_fastrtps_c.h\n'}
+[31.956223] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg\n'}
+[31.956586] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[31.957043] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[31.957836] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[31.959176] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface\n'}
+[31.960314] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv\n'}
+[31.961481] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail\n'}
+[31.962582] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[31.963226] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/dds_fastrtps\n'}
+[31.963839] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg\n'}
+[31.965037] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[31.965869] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[31.966599] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[31.967189] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface\n'}
+[31.967961] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv\n'}
+[31.968462] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail\n'}
+[31.969100] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__type_support.c\n'}
+[31.969528] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_introspection_c.h\n'}
+[31.969928] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg\n'}
+[31.970318] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[31.970706] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so\n'}
+[31.977228] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[31.978131] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so\n'}
+[31.978686] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_c.so" to ""\n'}
+[31.979123] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface\n'}
+[31.979522] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv\n'}
+[31.980027] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail\n'}
+[31.980399] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__struct.hpp\n'}
+[31.980806] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__traits.hpp\n'}
+[31.981180] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__builder.hpp\n'}
+[31.981522] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/set_velocity.hpp\n'}
+[31.981953] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface\n'}
+[31.982388] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv\n'}
+[31.982773] (custom_interface) StdoutLine: {'line': b'-- Up-to-date: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail\n'}
+[31.983146] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[31.983488] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/include/custom_interface/srv/detail/set_velocity__type_support.cpp\n'}
+[31.983913] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[31.984346] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[31.984763] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so\n'}
+[31.985156] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[31.985604] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/pythonpath.sh\n'}
+[31.985956] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/pythonpath.dsv\n'}
+[31.986487] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/__init__.py\n'}
+[32.019730] (-) TimerEvent: {}
+[32.120398] (-) TimerEvent: {}
+[32.202983] (custom_interface) StdoutLine: {'line': b"Compiling '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/__init__.py'...\n"}
+[32.220632] (-) TimerEvent: {}
+[32.226115] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv\n'}
+[32.226849] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv/__init__.py\n'}
+[32.227324] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv/_set_velocity_s.c\n'}
+[32.227865] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/srv/_set_velocity.py\n'}
+[32.229361] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[32.231577] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[32.232405] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[32.234888] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[32.235659] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[32.237884] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/python3.8/site-packages/custom_interface/custom_interface_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[32.238413] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__python.so\n'}
+[32.240006] (custom_interface) StdoutLine: {'line': b'-- Set runtime path of "/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/lib/libcustom_interface__python.so" to ""\n'}
+[32.240556] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity.idl\n'}
+[32.241475] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity.srv\n'}
+[32.242224] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity_Request.msg\n'}
+[32.243061] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/srv/SetVelocity_Response.msg\n'}
+[32.244062] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/package_run_dependencies/custom_interface\n'}
+[32.245142] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/parent_prefix_path/custom_interface\n'}
+[32.245957] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/ament_prefix_path.sh\n'}
+[32.246741] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/ament_prefix_path.dsv\n'}
+[32.247614] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/path.sh\n'}
+[32.248366] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/environment/path.dsv\n'}
+[32.249477] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.bash\n'}
+[32.250430] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.sh\n'}
+[32.251418] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.zsh\n'}
+[32.252553] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/local_setup.dsv\n'}
+[32.253530] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/package.dsv\n'}
+[32.254831] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/ament_index/resource_index/packages/custom_interface\n'}
+[32.257350] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_generator_cExport.cmake\n'}
+[32.257910] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[32.258438] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[32.259135] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[32.260332] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport.cmake\n'}
+[32.261805] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[32.263358] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_generator_cppExport.cmake\n'}
+[32.265077] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[32.266392] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[32.267816] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport.cmake\n'}
+[32.276873] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[32.277844] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[32.278676] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[32.279131] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[32.279534] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[32.279999] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[32.280418] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[32.280949] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[32.281422] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig.cmake\n'}
+[32.281838] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/cmake/custom_interfaceConfig-version.cmake\n'}
+[32.282220] (custom_interface) StdoutLine: {'line': b'-- Installing: /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/install/custom_interface/share/custom_interface/package.xml\n'}
+[32.285272] (custom_interface) CommandEnded: {'returncode': 0}
+[32.325870] (-) TimerEvent: {}
+[32.427485] (-) TimerEvent: {}
+[32.528495] (-) TimerEvent: {}
+[32.629238] (-) TimerEvent: {}
+[32.731443] (-) TimerEvent: {}
+[32.776635] (custom_interface) JobEnded: {'identifier': 'custom_interface', 'rc': 0}
+[32.781987] (-) EventReactorShutdown: {}

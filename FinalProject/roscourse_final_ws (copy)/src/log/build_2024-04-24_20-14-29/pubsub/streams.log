@@ -1,0 +1,46 @@
+[4.100s] Invoking command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/pubsub': PYTHONPATH=/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/prefix_override:/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/pubsub build --build-base /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build install --record /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/install.log --install-scripts $base/lib/pubsub --single-version-externally-managed
+[5.521s] running egg_info
+[5.523s] creating ../build/pubsub/pubsub.egg-info
+[5.524s] writing ../build/pubsub/pubsub.egg-info/PKG-INFO
+[5.525s] writing dependency_links to ../build/pubsub/pubsub.egg-info/dependency_links.txt
+[5.526s] writing entry points to ../build/pubsub/pubsub.egg-info/entry_points.txt
+[5.527s] writing requirements to ../build/pubsub/pubsub.egg-info/requires.txt
+[5.528s] writing top-level names to ../build/pubsub/pubsub.egg-info/top_level.txt
+[5.534s] writing manifest file '../build/pubsub/pubsub.egg-info/SOURCES.txt'
+[5.718s] reading manifest file '../build/pubsub/pubsub.egg-info/SOURCES.txt'
+[5.722s] writing manifest file '../build/pubsub/pubsub.egg-info/SOURCES.txt'
+[5.723s] running build
+[5.723s] running build_py
+[5.724s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build
+[5.724s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib
+[5.725s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub
+[5.725s] copying pubsub/__init__.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub
+[5.726s] copying pubsub/square_movement_sub.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub
+[5.726s] copying pubsub/square_movement.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub
+[5.726s] running install
+[5.731s] running install_lib
+[5.736s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub
+[5.736s] copying /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub/__init__.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub
+[5.737s] copying /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub/square_movement_sub.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub
+[5.737s] copying /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build/lib/pubsub/square_movement.py -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub
+[5.740s] byte-compiling /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub/__init__.py to __init__.cpython-38.pyc
+[5.745s] byte-compiling /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub/square_movement_sub.py to square_movement_sub.cpython-38.pyc
+[5.747s] byte-compiling /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub/square_movement.py to square_movement.cpython-38.pyc
+[5.749s] running install_data
+[5.751s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share
+[5.752s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share/ament_index
+[5.752s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share/ament_index/resource_index
+[5.753s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share/ament_index/resource_index/packages
+[5.753s] copying resource/pubsub -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share/ament_index/resource_index/packages
+[5.754s] creating /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share/pubsub
+[5.754s] copying package.xml -> /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/share/pubsub
+[5.755s] running install_egg_info
+[5.762s] Copying ../build/pubsub/pubsub.egg-info to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages/pubsub-0.0.0-py3.8.egg-info
+[5.769s] running install_scripts
+[5.858s] Installing final_pub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/pubsub
+[5.859s] Installing final_sub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/pubsub
+[5.860s] Installing square_movement script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/pubsub
+[5.860s] Installing square_movement_sub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/pubsub
+[5.861s] Installing test_pub script to /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/pubsub
+[5.861s] writing list of installed files to '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/install.log'
+[5.973s] Invoked command in '/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/pubsub' returned '0': PYTHONPATH=/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/prefix_override:/root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/install/pubsub/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/pubsub build --build-base /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/build install --record /root/codes/S24_RobotProgramming_Humble_Hawksbill/FinalProject/roscourse_final_ws (copy)/src/build/pubsub/install.log --install-scripts $base/lib/pubsub --single-version-externally-managed
