@@ -17,6 +17,7 @@ class SquareMovement(Node):
         self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
         timer_period = 0.935  # seconds
         self.timer = self.create_timer(timer_period, self.move_robot)
+        self.speechTimer = self.create_timer(.05, self.read_speech)
         self.linear_speed = 0.2  # m/s
         # self.linear_speed = 0.0  # m/s
         self.angular_speed = 0.2  # rad/s
@@ -33,6 +34,8 @@ class SquareMovement(Node):
         self.car.create_receive_threading()
         
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
+
+        self.twist = Twist()
         
 
         
@@ -41,33 +44,29 @@ class SquareMovement(Node):
         self.get_logger().info('Linear_speed set: %s' % (self.linear_speed))
         response.ret = 1
         return response
-    
-    def move_robot(self):
-        twist = Twist()
 
-        # self.get_logger().info("inside of move_robot")
+    def read_speech (self):
         speech_r = spe.speech_read()
-		#speech
-        # self.get_logger().info(str(speech_r))
-        # default int = 999
-        if speech_r == 4:
-            spe.void_write(speech_r)
+
+        if(speech_r == 4):
+        self.get_logger().info("go")
+            self.twist = Twist()
             # Move forward
             if self.current_side % 4 == 0:
-                twist.linear.x = self.linear_speed
-                twist.angular.z = 0.0
+                self.twist.linear.x = self.linear_speed
+                self.twist.angular.z = 0.0
              # Rotate 90 degrees
             elif self.current_side % 4 == 1:
-                twist.linear.x = 0.0
-                twist.angular.z = self.angular_speed
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = self.angular_speed
             # Move forward
             elif self.current_side % 4 == 2:
-                twist.linear.x = self.linear_speed
-                twist.angular.z = 0.0
+                self.twist.linear.x = self.linear_speed
+                self.twist.angular.z = 0.0
             # Rotate 90 degrees
             elif self.current_side % 4 == 3:
-                twist.linear.x = 0.0
-                twist.angular.z = self.angular_speed
+                self.twist.linear.x = 0.0
+                self.twist.angular.z = self.angular_speed
 
             # Update current angle and side
             if self.current_side % 4 == 1 or self.current_side % 4 == 3:
@@ -82,14 +81,23 @@ class SquareMovement(Node):
                     self.current_angle = 0.0
                 else:
                     self.current_angle += self.angular_speed
-            self.publisher_.publish(twist)
+            return
+            # self.publisher_.publish(twist)
 
-        if speech_r == 2 or speech_r == 0 :
+        if(speech_r == 1):
+        self.get_logger().info("stop")
             spe.void_write(speech_r)
-            twist.linear.x = 0.0
-            twist.angular.z = 0.0
-            twist.angular.z = 0.0
-            self.publisher_.publish(twist)
+            self.twist = Twist()
+            self.twist.linear.x = 0.0
+            self.twist.angular.z = 0.0
+            self.twist.angular.z = 0.0
+            return
+            # self.publisher_.publish(twist)
+        self.get_logger().info("no command")
+    
+    def move_robot(self):
+        self.get_logger().info("-- publishing")
+            self.publisher_.publish(self.twist)
 
         
 
