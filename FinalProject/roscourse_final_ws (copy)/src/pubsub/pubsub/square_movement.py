@@ -45,9 +45,12 @@ class SquareMovement(Node):
     def move_robot(self):
         twist = Twist()
 
+        f = open("speech_data.txt", "w")
         speech_r = self.spe.speech_read()
+        f.write(speech_r)
+        f.close()
 		#speech
-        self.get_logger().info(("recieved " + speech_r))
+        # self.get_logger().info(("recieved " + speech_r))
         if speech_r == 4:
             self.spe.void_write(speech_r)
             # Move forward
