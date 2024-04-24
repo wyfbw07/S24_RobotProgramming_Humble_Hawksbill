@@ -48,7 +48,7 @@ class SquareMovement(Node):
         self.get_logger().info("inside of move_robot")
         speech_r = spe.speech_read()
 		#speech
-        self.get_logger().info(speech_r)
+        self.get_logger().info(str(speech_r))
         if speech_r == 4:
             spe.void_write(speech_r)
             # Move forward
