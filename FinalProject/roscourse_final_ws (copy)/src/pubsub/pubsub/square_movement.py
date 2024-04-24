@@ -35,7 +35,7 @@ class SquareMovement(Node):
         
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
 
-        self.twist = Twist()
+        # twist = Twist()
         self.phase = 1
         
 
@@ -60,24 +60,26 @@ class SquareMovement(Node):
     def move_robot(self):
         if(self.phase == 0):
             return
+
+        twist = Twist()
         if(self.phase == 4):
-            # self.twist = Twist()
+            # twist = Twist()
             # Move forward
             if self.current_side % 4 == 0:
-                self.twist.linear.x = self.linear_speed
-                self.twist.angular.z = 0.0
+                twist.linear.x = self.linear_speed
+                twist.angular.z = 0.0
              # Rotate 90 degrees
             elif self.current_side % 4 == 1:
-                self.twist.linear.x = 0.0
-                self.twist.angular.z = self.angular_speed
+                twist.linear.x = 0.0
+                twist.angular.z = self.angular_speed
             # Move forward
             elif self.current_side % 4 == 2:
-                self.twist.linear.x = self.linear_speed
-                self.twist.angular.z = 0.0
+                twist.linear.x = self.linear_speed
+                twist.angular.z = 0.0
             # Rotate 90 degrees
             elif self.current_side % 4 == 3:
-                self.twist.linear.x = 0.0
-                self.twist.angular.z = self.angular_speed
+                twist.linear.x = 0.0
+                twist.angular.z = self.angular_speed
 
             # Update current angle and side
             if self.current_side % 4 == 1 or self.current_side % 4 == 3:
@@ -94,11 +96,11 @@ class SquareMovement(Node):
                     self.current_angle += self.angular_speed
 
         if(self.phase == 1):
-            self.twist.linear.x = 0.0
-            self.twist.angular.z = 0.0
-            self.twist.angular.z = 0.0
+            twist.linear.x = 0.0
+            twist.angular.z = 0.0
+            twist.angular.z = 0.0
 
-        self.publisher_.publish(self.twist)
+        self.publisher_.publish(twist)
 
         
 
