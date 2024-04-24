@@ -96,9 +96,13 @@ def main(args=None):
     rclpy.init(args=args)
 
     square_movement = SquareMovement()
-
-    rclpy.spin(square_movement)
-
+    try:
+        rclpy.spin(square_movement)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        square_movement.car.set_car_motion(0, 0, 0)
+    
     square_movement.destroy_node()
     rclpy.shutdown()
 
