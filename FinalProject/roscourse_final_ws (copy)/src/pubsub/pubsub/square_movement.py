@@ -45,10 +45,11 @@ class SquareMovement(Node):
     def move_robot(self):
         twist = Twist()
 
-        self.get_logger().info("inside of move_robot")
+        # self.get_logger().info("inside of move_robot")
         speech_r = spe.speech_read()
 		#speech
-        self.get_logger().info(str(speech_r))
+        # self.get_logger().info(str(speech_r))
+        # default int = 999
         if speech_r == 4:
             spe.void_write(speech_r)
             # Move forward
