@@ -5,6 +5,24 @@ from custom_interface.srv import SetVelocity
 import math
 import time
 
+from Rosmaster_Lib import Rosmaster
+from Speech_Lib import Speech
+from std_msgs.msg import Float32
+
+class yahboomcar_driver(Node):
+	def __init__(self, name):
+		super().__init__(name)
+
+		self.car = Rosmaster()
+		
+		#create timer
+		self.timer = self.create_timer(0.1, self.pub_data)
+
+		#create and init variable
+		self.edition = Float32()
+		self.edition.data = 1.0
+		self.car.create_receive_threading()
+
 class SquareMovement(Node):
     def __init__(self):
         super().__init__('square_movement')
