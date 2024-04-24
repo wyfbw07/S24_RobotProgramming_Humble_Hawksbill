@@ -9,6 +9,7 @@ from Rosmaster_Lib import Rosmaster
 from Speech_Lib import Speech
 from std_msgs.msg import Float32
 
+spe = Speech()
 
 class SquareMovement(Node):
     def __init__(self):
@@ -24,7 +25,7 @@ class SquareMovement(Node):
 
         self.car = Rosmaster()
 
-	    #create and init variable
+	    #voice control init
         self.edition = Float32()
         self.edition.data = 1.0
         self.car.create_receive_threading()
