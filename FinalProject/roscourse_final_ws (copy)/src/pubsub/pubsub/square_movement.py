@@ -36,7 +36,7 @@ class SquareMovement(Node):
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
 
         self.twist = Twist()
-        self.phase = 0
+        self.phase = 1
         
 
         
@@ -58,6 +58,8 @@ class SquareMovement(Node):
             return
     
     def move_robot(self):
+        if(self.phase == 0):
+            return
         if(self.phase == 4):
             # self.twist = Twist()
             # Move forward
@@ -92,7 +94,6 @@ class SquareMovement(Node):
                     self.current_angle += self.angular_speed
 
         if(self.phase == 1):
-            self.twist = Twist()
             self.twist.linear.x = 0.0
             self.twist.angular.z = 0.0
             self.twist.angular.z = 0.0
