@@ -1,7 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from custom_interfaces.srv import SetVelocity
+from custom_interface.srv import SetVelocity
 import math
 import time
 
