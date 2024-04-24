@@ -31,6 +31,10 @@ class SquareMovement(Node):
         self.car.create_receive_threading()
         
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
+
+        self.spe = Speech()
+        
+
         
     def set_velocity_callback(self,request,response):
         self.linear_speed = request.linear_x
@@ -41,11 +45,11 @@ class SquareMovement(Node):
     def move_robot(self):
         twist = Twist()
 
-        speech_r = spe.speech_read()
+        speech_r = self.spe.speech_read()
 		#speech
         self.get_logger().info(("recieved " + speech_r))
         if speech_r == 4:
-            spe.void_write(speech_r)
+            self.spe.void_write(speech_r)
             # Move forward
             if self.current_side % 4 == 0:
                 twist.linear.x = self.linear_speed
@@ -79,7 +83,7 @@ class SquareMovement(Node):
             self.publisher_.publish(twist)
 
         if speech_r == 2 or speech_r == 0 :
-            spe.void_write(speech_r)
+            self.spe.void_write(speech_r)
             twist.linear.x = 0.0
             twist.angular.z = 0.0
             twist.angular.z = 0.0
