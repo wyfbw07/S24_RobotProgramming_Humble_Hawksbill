@@ -62,6 +62,20 @@ class SquareMovement(Node):
             elif self.current_side % 4 == 3:
                 twist.linear.x = 0.0
                 twist.angular.z = self.angular_speed
+
+            # Update current angle and side
+            if self.current_side % 4 == 1 or self.current_side % 4 == 3:
+                if abs(self.current_angle) >= math.pi / 2:
+                    self.current_side += 1
+                    self.current_angle = 0.0
+                else:
+                    self.current_angle += self.angular_speed
+            else:
+                if abs(self.current_angle) >= 1.0:  # Ensure it rotates 90 degrees
+                    self.current_side += 1
+                    self.current_angle = 0.0
+                else:
+                    self.current_angle += self.angular_speed
             self.publisher_.publish(twist)
 
         if speech_r == 2 or speech_r == 0 :
@@ -71,19 +85,7 @@ class SquareMovement(Node):
             twist.angular.z = 0.0
             self.publisher_.publish(twist)
 
-        # Update current angle and side
-        if self.current_side % 4 == 1 or self.current_side % 4 == 3:
-            if abs(self.current_angle) >= math.pi / 2:
-                self.current_side += 1
-                self.current_angle = 0.0
-            else:
-                self.current_angle += self.angular_speed
-        else:
-            if abs(self.current_angle) >= 1.0:  # Ensure it rotates 90 degrees
-                self.current_side += 1
-                self.current_angle = 0.0
-            else:
-                self.current_angle += self.angular_speed
+        
 
 def main(args=None):
     rclpy.init(args=args)
