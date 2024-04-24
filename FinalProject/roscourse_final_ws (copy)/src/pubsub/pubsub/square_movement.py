@@ -36,6 +36,7 @@ class SquareMovement(Node):
         self.velocity_srv = self.create_service(SetVelocity, 'setVelocity', self.set_velocity_callback)
 
         self.twist = Twist()
+        self.phase = 0
         
 
         
@@ -47,6 +48,58 @@ class SquareMovement(Node):
 
     def read_speech (self):
         speech_r = spe.speech_read()
+
+        if(speech_r == 4):
+            self.phase = 4
+            self.get_logger().info("go")
+            # self.twist = Twist()
+            # # Move forward
+            # if self.current_side % 4 == 0:
+            #     self.twist.linear.x = self.linear_speed
+            #     self.twist.angular.z = 0.0
+            #  # Rotate 90 degrees
+            # elif self.current_side % 4 == 1:
+            #     self.twist.linear.x = 0.0
+            #     self.twist.angular.z = self.angular_speed
+            # # Move forward
+            # elif self.current_side % 4 == 2:
+            #     self.twist.linear.x = self.linear_speed
+            #     self.twist.angular.z = 0.0
+            # # Rotate 90 degrees
+            # elif self.current_side % 4 == 3:
+            #     self.twist.linear.x = 0.0
+            #     self.twist.angular.z = self.angular_speed
+
+            # # Update current angle and side
+            # if self.current_side % 4 == 1 or self.current_side % 4 == 3:
+            #     if abs(self.current_angle) >= math.pi / 2:
+            #         self.current_side += 1
+            #         self.current_angle = 0.0
+            #     else:
+            #         self.current_angle += self.angular_speed
+            # else:
+            #     if abs(self.current_angle) >= 1.0:  # Ensure it rotates 90 degrees
+            #         self.current_side += 1
+            #         self.current_angle = 0.0
+            #     else:
+            #         self.current_angle += self.angular_speed
+            return
+            # self.publisher_.publish(twist)
+
+        if(speech_r == 1):
+            self.phase = 1
+            self.get_logger().info("stop")
+            # spe.void_write(speech_r)
+            # self.twist = Twist()
+            # self.twist.linear.x = 0.0
+            # self.twist.angular.z = 0.0
+            # self.twist.angular.z = 0.0
+            return
+            # self.publisher_.publish(twist)
+        self.get_logger().info("no command")
+    
+    def move_robot(self):
+        self.get_logger().info("-- publishing")
 
         if(speech_r == 4):
             self.get_logger().info("go")
@@ -81,23 +134,17 @@ class SquareMovement(Node):
                     self.current_angle = 0.0
                 else:
                     self.current_angle += self.angular_speed
-            return
-            # self.publisher_.publish(twist)
+            # return
 
-        if(speech_r == 1):
+        if(self.phase == 1):
             self.get_logger().info("stop")
-            spe.void_write(speech_r)
             self.twist = Twist()
             self.twist.linear.x = 0.0
             self.twist.angular.z = 0.0
             self.twist.angular.z = 0.0
-            return
             # self.publisher_.publish(twist)
-        self.get_logger().info("no command")
-    
-    def move_robot(self):
-            self.get_logger().info("-- publishing")
-            self.publisher_.publish(self.twist)
+
+        self.publisher_.publish(self.twist)
 
         
 
