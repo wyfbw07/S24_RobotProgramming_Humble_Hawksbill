@@ -49,7 +49,7 @@ class SquareMovement(Node):
         speech_r = spe.speech_read()
 
         if(speech_r == 4):
-        self.get_logger().info("go")
+            self.get_logger().info("go")
             self.twist = Twist()
             # Move forward
             if self.current_side % 4 == 0:
@@ -85,7 +85,7 @@ class SquareMovement(Node):
             # self.publisher_.publish(twist)
 
         if(speech_r == 1):
-        self.get_logger().info("stop")
+            self.get_logger().info("stop")
             spe.void_write(speech_r)
             self.twist = Twist()
             self.twist.linear.x = 0.0
@@ -96,7 +96,7 @@ class SquareMovement(Node):
         self.get_logger().info("no command")
     
     def move_robot(self):
-        self.get_logger().info("-- publishing")
+            self.get_logger().info("-- publishing")
             self.publisher_.publish(self.twist)
 
         
