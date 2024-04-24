@@ -59,7 +59,7 @@ class SquareMovement(Node):
     
     def move_robot(self):
         if(self.phase == 4):
-            self.twist = Twist()
+            # self.twist = Twist()
             # Move forward
             if self.current_side % 4 == 0:
                 self.twist.linear.x = self.linear_speed
