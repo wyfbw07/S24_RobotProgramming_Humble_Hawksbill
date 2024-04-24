@@ -43,7 +43,7 @@ class SquareMovement(Node):
 
         speech_r = spe.speech_read()
 		#speech
-        #print(speech_r)
+        print("recieved", speech_r)
         if speech_r == 4:
             spe.void_write(speech_r)
             # Move forward
