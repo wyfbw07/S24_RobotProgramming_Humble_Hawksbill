@@ -1,4 +1,0 @@
-srv/SetVelocity.idl
-srv/SetVelocity.srv
-srv/SetVelocity_Request.msg
-srv/SetVelocity_Response.msg
