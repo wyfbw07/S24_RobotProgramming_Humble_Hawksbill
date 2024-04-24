@@ -101,7 +101,7 @@ class SquareMovement(Node):
     def move_robot(self):
         self.get_logger().info("-- publishing")
 
-        if(speech_r == 4):
+        if(self.phase == 4):
             self.get_logger().info("go")
             self.twist = Twist()
             # Move forward
