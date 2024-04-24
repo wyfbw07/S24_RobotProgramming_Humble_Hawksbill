@@ -4,10 +4,10 @@ from geometry_msgs.msg import Twist
 import math
 
 
-class MinimalSubscriber(Node):
+class square_movement_sub(Node):
 
     def __init__(self):
-        super().__init__('minimal_subscriber')
+        super().__init__('square_movement_sub')
         self.subscription = self.create_subscription(
             Twist,
             '/cmd_vel',
@@ -25,12 +25,12 @@ class MinimalSubscriber(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    minimal_subscriber = MinimalSubscriber()
+    square_movement_sub = square_movement_sub()
 
-    rclpy.spin(minimal_subscriber)
+    rclpy.spin(square_movement_sub)
 
-    minimal_subscriber.destroy_node()
-    minimal_subscriber.file.close()
+    square_movement_sub.destroy_node()
+    square_movement_sub.file.close()
     rclpy.shutdown()
 
 
